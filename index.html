@@ -4,95 +4,165 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Online CV</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="my.js"></script>
+    <title>Online CV</title>
   </head>
-  <body>
-    <div class="container">
-      <div class="header">
-            <div class="">
-              <img src="" style="width:100%" alt="" />
-            </div>
-            <div class="">
-                <h2>Harriet Christine Kiyai</h2>
-            </div>
-        </div>
-            <div class="container">
-              <p><i class="fa fa-briefcase"></i> Student-Frontend Web Development </p>
-              <p><i class="fa fa-home" ></i>Groningen - Netherlands </p>
-              <p> <i class="fa fa-envelope"></i >kharie65@gmail.com</p>
-                <p> <i class="fa fa-phone"></i>068-7883855 </p>
-              <hr />
-            </div>
-            <!-- Left column-->
-            <div class="content">
-              <p class="large">
-                <b><i class="fa fa-asterisk"></i>Skills</b></p>
-              <p>HTML</p>
-              <div class="" style="width:90%"></div>
-              <div class="" style="width:90%"> 80% </div>
-              <p>CSS</p>
-              <div class="" style="width:80%">
-              <div class="" style="width:80%">60%</div>
-              <p>Javascript</p>
-              <div class="" style="width:75%">20%</div>
-            </div>
+  <body id="body">
+    <div class="container-fluid">
+      <div class="card" id="head">
+        
 
-            <div class="content"> 
-                <p class="large"><b
-                  ><i class="fa fa-globe"></i>Languages</b></p>
-                <p>English</p>
-              <div class="">
-                <div class="" style="height:24px;width:95%"></div>
-                <div class="" style="width:75%">95%</div>
+            <img src="" style="width:100%" alt="" />
+            <h2>Harriet Christine Kiyai</h2>
+            <p>
+              <i class="fa fa-briefcase"></i> Student-Frontend Web Development
+            </p>
+            <p><i class="fa fa-home"></i> Groningen - Netherlands</p>
+            <p><i class="fa fa-envelope"></i>kharie65@gmail.com</p>
+            <p><i class="fa fa-phone"></i>068-7883855</p>
+          </hr>
+          
+        
+      </div>
+      <!-- Left column-->
+      <div class="container-fluid">
+        <div class="card">
+          
+              <p class="large">
+                <b><i class="fa fa-asterisk"></i>Skills</b>
+              </p>
+              <p>HTML</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width:80%"
+                >
+                  80%
+                </div>
+              </div>
+              <p>CSS</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="65"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width:65%"
+                >
+                  70%
+                </div>
+              </div>
+              <p>Javascript</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="20"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width:20%"
+                >
+                  20%
+                </div>
+              </div>
+
+              <p class="large">
+                <b><i class="fa fa-globe"></i>Languages</b>
+              </p>
+              <p>English</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width:90%"
+                >
+                  90%
+                </div>
               </div>
               <p>Dutch</p>
-              <div class="">
-                <div class="" style="height:24px;width:65%"></div>
-                <div class="" style="width:75%">65%</div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width:65%"
+                >
+                  65%
+                </div>
               </div>
-              <p>Mother-languages</p>
-              <div class="">
-                <div class="" style="height:24px;width:100%"></div>
-                <div class="" style="width:75%">100%</div>
-              </div>
-              <br />
-            </div>
+              <p>Native Languages</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width:100%"
+                >
+                  100%
+                </div>
+             
           </div>
-          <br />
         </div>
 
-        <!-- Right Column -->
-        <div class="">
-          <div class="">
-            <h2 class="">
-              <i class="fa fa-suitcase"></i>Work Experience
-            </h2>
-            <div class="">
+        
+      </div>
+
+      <!-- Right Column -->
+      <div class="container-fluid">
+        <div class="card">
+          
+            <h2 class=""><i class="fa fa-suitcase"></i>Work Experience</h2>
+            
               <h5 class="">
                 <b>Administrative Assistant</b>
               </h5>
               <h6 class="">
                 <i class="fa fa-calendar"></i>2016 - 2018
-                <span class="" >Fair Back Kringloop - Groningen</span>
+                <span class="">Fair Back Kringloop - Groningen</span>
               </h6>
-              <ul>
-                <li>Data Entry using Excel-Sales and expenses</li>
-                <li>Cashier and shop organisation</li>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  Data Entry using Excel-Sales and expenses
+                </li>
+                <li class="list-group-item">Cashier and shop organisation</li>
               </ul>
-              <hr/>
-            </div>
-            <div class="">
+              <hr />
+            
+            
               <h5 class="">
                 <b>Accounts/Administrative Assistant</b>
               </h5>
@@ -100,68 +170,83 @@
                 <i class="fa fa-calendar"></i>2006 - 2013
                 <span class="">Medical Access Uganda Limited - Kampala</span>
               </h6>
-              <ul>
-                <li>Drafting accounts reports</li>
-                <li>Filing personnel and company taxes</li>
-                <li>Data entry using book keeping applications</li>
+              <ul class="list-group">
+                <li class="list-group-item">Drafting accounts reports</li>
+                <li class="list-group-item">
+                  Filing personnel and company taxes
+                </li>
+                <li class="list-group-item">
+                  Data entry using book keeping applications
+                </li>
               </ul>
-              <hr />
+              
+              </div>
             </div>
           </div>
 
-          <div class="content">
-            <h2 class="">
-              <i class="fa fa-certificate"></i>Education
-            </h2>
-            <div class="">
-              <h5 class="opacity"><b>CodeGorrilla-Groningen</b></h5>
-              <h6 class="text-teal">
-                <i class="fa fa-calendar"></i>May - June 2019
-              </h6>
-              <p>Frontend Developer - Intensive fulltime Course</p>
-              <hr />
-            </div>
-            <div class="">
-              <h5 class="opacity"><b>Rijksuniversiteit - Groningen</b></h5>
-              <h6 class="text-teal">
-                <i class="fa fa-calendar"></i>Feb 2018 - Apr 2018
-              </h6>
-              <p>Dutch - Level B2</p>
-              <hr />
-            </div>
-            <div class="">
-              <h5 class="opacity"><b>Alfa College - Groningen</b></h5>
-              <h6 class="text-teal">
-                <i class="fa fa-calendar"></i> 2016 - 2017
-              </h6>
-              <p>Integration course and Dutch - Level B1</p>
-              <br />
-            </div>
-            <div class="">
-              <h5 class="opacity">
-                <b>Ndejje University Kampala - Uganda</b>
-              </h5>
-              <h6 class="text-teal">
-                <i class="fa fa-calendar"></i> 2006 - 2009
-              </h6>
-              <p>Business Computing and Information Management</p>
-              <hr />
+          <div class="container-fluid">
+            <div class="card">
+              
+                <h2 class=""><i class="fa fa-certificate"></i>Education</h2>
+                <div class="">
+                  <h5 class="opacity"><b>CodeGorrilla-Groningen</b></h5>
+                  <h6 class="text-teal">
+                    <i class="fa fa-calendar"></i>May - June 2019
+                  </h6>
+                  <p>Frontend Developer - Intensive fulltime Course</p>
+                  <hr />
+                </div>
+                <div class="">
+                  <h5 class="opacity"><b>Rijksuniversiteit - Groningen</b></h5>
+                  <h6 class="text-teal">
+                    <i class="fa fa-calendar"></i>Feb 2018 - Apr 2018
+                  </h6>
+                  <p>Dutch - Level B2</p>
+                  <hr />
+                </div>
+                <div class="">
+                  <h5 class="opacity"><b>Alfa College - Groningen</b></h5>
+                  <h6 class="text-teal">
+                    <i class="fa fa-calendar"></i> 2016 - 2017
+                  </h6>
+                  <p>Integration course and Dutch - Level B1</p>
+                  <br />
+                </div>
+                <div class="">
+                  <h5 class="opacity">
+                    <b>Ndejje University Kampala - Uganda</b>
+                  </h5>
+                  <h6 class="text-teal">
+                    <i class="fa fa-calendar"></i> 2006 - 2009
+                  </h6>
+                  <p>Business Computing and Information Management</p>
+                  <hr />
+                </div>
+              
             </div>
           </div>
-
-          
         </div>
-
-        <!-- Make grid-->
       </div>
 
-   <div class="footer">
-      <footer class="container">
-        <p>Social media</p>
-        <p><i class="fa fa-github hover-opacity"> https://github.com/HarrietKiyai/ </i></p> 
-        <p><i class="fa fa-linkedin hover-opacity"> https://www.linkedin.com/in/harrietkiai/</i></p>
-        <p>&copy; 2019</p>
-     </footer>
+      <div class="container-fluid">
+        <footer class="card">
+          <h5>Social media</h5>
+          <p>
+            <i class="fa fa-github hover-opacity">
+              https://github.com/HarrietKiyai/
+            </i>
+          </p>
+          <p>
+            <i class="fa fa-linkedin hover-opacity">
+              https://www.linkedin.com/in/harrietkiai/</i
+            >
+          </p>
+          <p>&copy; 2019</p>
+        </footer>
+      </div>
     </div>
+    <script>
+      body();
+    </script>
   </body>
 </html>
