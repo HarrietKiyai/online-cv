@@ -10,11 +10,29 @@ body {
   margin: 0.5em;
 }
 
+.col-container {
+  display: flex;
+  width: 100%;
+}
+
+.col {
+  display: 1;
+  padding: 16px;
+}
+
+.card {
+  background-color: #c5d5cb;
+}
+
+.middle {
+  height: 100%;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
